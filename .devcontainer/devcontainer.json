@@ -1,0 +1,21 @@
+{
+  "name": "Course Python Environment",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      }
+    }
+  },
+  "forwardPorts": [8888],
+  "postCreateCommand": "python -m ipykernel install --user --name course-python --display-name \"Python (Course Container)\""
+}

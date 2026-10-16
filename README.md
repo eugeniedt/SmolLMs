@@ -17,7 +17,7 @@ Also install the VS Code extensions:
 - Python
 - Jupyter
 
-Download from Moodle: 
+Download from Moodle (or GitHub): 
 - SmolLMs course folder
 
 To open the course environment: 
